@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Application</title>
+  <link rel="stylesheet" href="link/main.css">
+</head>
+<body style="background-image: url('img/bg.jpg');">
+  <div id="timer"></div> <!-- Timer display element -->
+  <div class="head">
+    <div id="home" class="active">
+      <h2>Quiz Instructions</h2>
+      <div class="home-gif">
+        <img src="img/logo.gif" alt="Quiz GIF">
+      </div>
+      <div class="note">
+      <p>This Quiz contains 20 mulitple choice questions with 5 questions each of different domains.
+        Answer the Questions and complete them within the time limit.
+      </p>
+      <p> All the Best !!!</p>
+     </div>
+     <div class = "start-button">
+      <button onclick="navigateTo('pg1')">Start Quiz</button>
+     </div>
+    </div>
+    
+    <div id="pg1">
+      <h2>Page 1</h2>
+      <div class="question">
+        <p>1. Which of the following is not an operating system?</p>
+        <label><input type="radio" name="q1" value="A"> A) Windows</label><br>
+        <label><input type="radio" name="q1" value="B"> B) Linux</label><br>
+        <label><input type="radio" name="q1" value="C"> C) Oracle</label><br>
+        <label><input type="radio" name="q1" value="D"> D) macOS</label>
+      </div>
+      <div class="question">
+        <p>2. What is the main purpose of an IP address?</p>
+        <label><input type="radio" name="q2" value="A"> A) To identify a device on a network</label><br>
+        <label><input type="radio" name="q2" value="B"> B) To store data</label><br>
+        <label><input type="radio" name="q2" value="C"> C) To compile code</label><br>
+        <label><input type="radio" name="q2" value="D"> D) To display graphics</label>
+      </div>
+      <div class="question">
+        <p>3. Which of the following languages is used for web development?</p>
+        <label><input type="radio" name="q3" value="A"> A) C++</label><br>
+        <label><input type="radio" name="q3" value="B"> B) Python</label><br>
+        <label><input type="radio" name="q3" value="C"> C) HTML</label><br>
+        <label><input type="radio" name="q3" value="D"> D) Java</label>
+      </div>
+      <div class="question">
+        <p>4. In computer networks, what does LAN stand for?</p>
+        <label><input type="radio" name="q4" value="A"> A) Local Area Network</label><br>
+        <label><input type="radio" name="q4" value="B"> B) Large Area Network</label><br>
+        <label><input type="radio" name="q4" value="C"> C) Light Access Network</label><br>
+        <label><input type="radio" name="q4" value="D"> D) Linear Area Network</label>
+      </div>
+      <div class="question">
+        <p>5. What does GUI stand for?</p>
+        <label><input type="radio" name="q5" value="A"> A) General User Interface</label><br>
+        <label><input type="radio" name="q5" value="B"> B) Graphical User Interface</label><br>
+        <label><input type="radio" name="q5" value="C"> C) Global User Interface</label><br>
+        <label><input type="radio" name="q5" value="D"> D) Graphic Utility Interface</label>
+      </div>
+      <div class="nav-buttons"> <button onclick="navigateTo('pg2')">Next</button> </div>
+    </div>
+
+    <div id="pg2">
+      <h2>Page 2</h2>
+      <div class="question">
+        <p>6. Which data structure uses LIFO (Last In First Out) principle?</p>
+        <label><input type="radio" name="q6" value="A"> A) Queue</label><br>
+        <label><input type="radio" name="q6" value="B"> B) Stack</label><br>
+        <label><input type="radio" name="q6" value="C"> C) Array</label><br>
+        <label><input type="radio" name="q6" value="D"> D) Linked List</label>
+      </div>
+      <div class="question">
+        <p>7. What is the time complexity of binary search in a sorted array?</p>
+        <label><input type="radio" name="q7" value="A"> A) O(n)</label><br>
+        <label><input type="radio" name="q7" value="B"> B) O(log n)</label><br>
+        <label><input type="radio" name="q7" value="C"> C) O(n^2)</label><br>
+        <label><input type="radio" name="q7" value="D"> D) O(1)</label>
+      </div>
+      <div class="question">
+        <p>8. Which sorting algorithm is considered the fastest for large datasets?</p>
+        <label><input type="radio" name="q8" value="A"> A) Bubble Sort</label><br>
+        <label><input type="radio" name="q8" value="B"> B) Selection Sort</label><br>
+        <label><input type="radio" name="q8" value="C"> C) Quick Sort</label><br>
+        <label><input type="radio" name="q8" value="D"> D) Insertion Sort</label>
+      </div>
+      <div class="question">
+        <p>9. What data structure is used to implement a priority queue?</p>
+        <label><input type="radio" name="q9" value="A"> A) Stack</label><br>
+        <label><input type="radio" name="q9" value="B"> B) Linked List</label><br>
+        <label><input type="radio" name="q9" value="C"> C) Heap</label><br>
+        <label><input type="radio" name="q9" value="D"> D) Array</label>
+      </div>
+      <div class="question">
+        <p>10. Which of the following is not a characteristic of a binary search tree?</p>
+        <label><input type="radio" name="q10" value="A"> A) All left descendants are less than the node</label><br>
+        <label><input type="radio" name="q10" value="B"> All right descendants are greater than the node</label><br>
+        <label><input type="radio" name="q10" value="C"> Each node has at most two children</label><br>
+        <label><input type="radio" name="q10" value="D"> All nodes are unique</label>
+      </div>
+        <div class="nav-buttons">
+            <button onclick="navigateTo('pg1')">Previous</button>
+            <button onclick="navigateTo('pg3')">Next</button>
+        </div>
+    </div>
+
+    <div id="pg3">
+      <h2>Page 3</h2>
+      <div class="question">
+        <p>11. What is the goal of Artificial Intelligence?</p>
+        <label><input type="radio" name="q11" value="A"> A) To create systems that can only perform specific tasks</label><br>
+        <label><input type="radio" name="q11" value="B"> B) To create systems that can perform tasks that require human intelligence</label><br>
+        <label><input type="radio" name="q11" value="C"> C) To create systems that can perform mathematical computations faster</label><br>
+        <label><input type="radio" name="q11" value="D"> D) To create systems that are easy to use</label>
+      </div>
+      <div class="question">
+        <p>12. Which of the following is a type of machine learning?</p>
+        <label><input type="radio" name="q12" value="A"> A) Supervised Learning</label><br>
+        <label><input type="radio" name="q12" value="B"> B) Taught Learning</label><br>
+        <label><input type="radio" name="q12" value="C"> C) Educated Learning</label><br>
+        <label><input type="radio" name="q12" value="D"> D) Instructed Learning</label>
+      </div>
+      <div class="question">
+        <p>13. In which of the following areas is natural language processing (NLP) used?</p>
+        <label><input type="radio" name="q13" value="A"> A) Image recognition</label><br>
+        <label><input type="radio" name="q13" value="B"> B) Speech recognition</label><br>
+        <label><input type="radio" name="q13" value="C"> C) Game playing</label><br>
+        <label><input type="radio" name="q13" value="D"> D) Data mining</label>
+      </div>
+      <div class="question">
+        <p>14. What is a neural network in the context of AI?</p>
+        <label><input type="radio" name="q14" value="A"> A) A biological network of neurons</label><br>
+        <label><input type="radio" name="q14" value="B"> B) A type of programming language</label><br>
+        <label><input type="radio" name="q14" value="C"> C) A framework for machine learning algorithms</label><br>
+        <label><input type="radio" name="q14" value="D"> D) A graphical representation of data</label>
+      </div>
+      <div class="question">
+        <p>15. Which of the following is not a type of reinforcement learning?</p>
+        <label><input type="radio" name="q15" value="A"> A) Positive Reinforcement</label><br>
+        <label><input type="radio" name="q15" value="B"> B) Negative Reinforcement</label><br>
+        <label><input type="radio" name="q15" value="C"> C) Supervised Reinforcement</label><br>
+        <label><input type="radio" name="q15" value="D"> D) Punishment</label>
+      </div>
+      <div class="nav-buttons">
+        <button onclick="navigateTo('pg2')">Previous</button>
+        <button onclick="navigateTo('pg4')">Next</button>
+      </div>
+    </div>
+
+    <div id="pg4">
+      <h2>Page 4</h2>
+      <div class="question">
+        <p>16. If A is the sister of B, and B is the brother of C, how is C related to A?</p>
+        <label><input type="radio" name="q16" value="A"> A) Brothery</label><br>
+        <label><input type="radio" name="q16" value="B"> B) Sister</label><br>
+        <label><input type="radio" name="q16" value="C"> C) Cousin</label><br>
+        <label><input type="radio" name="q16" value="D"> D) Cannot be determined</label>
+      </div>
+      <div class="question">
+        <p>17. In a code language, if 'FOUR' is written as '5 15 21 18', how would 'NINE' be written?</p>
+        <label><input type="radio" name="q17" value="A"> A) 14 9 14 5</label><br>
+        <label><input type="radio" name="q17" value="B"> B) 13 9 13 5</label><br>
+        <label><input type="radio" name="q17" value="C"> C) 15 9 15 5</label><br>
+        <label><input type="radio" name="q17" value="D"> D) 16 9 16 5</label>
+      </div>
+      <div class="question">
+        <p>18. What is the next number in the sequence: 2, 6, 12, 20, 30, ...?</p>
+        <label><input type="radio" name="q18" value="A"> A) 40</label><br>
+        <label><input type="radio" name="q18" value="B"> B) 42</label><br>
+        <label><input type="radio" name="q18" value="C"> C) 44</label><br>
+        <label><input type="radio" name="q18" value="D"> D) 36</label>
+      </div>
+      <div class="question">
+        <p>19. If all Bloops are Razzies and all Razzies are Lazzies, are all Bloops definitely Lazzies?</p>
+        <label><input type="radio" name="q19" value="A"> A) Yes</label><br>
+        <label><input type="radio" name="q19" value="B"> B) No</label><br>
+        <label><input type="radio" name="q19" value="C"> C) Cannot be determined</label><br>
+        <label><input type="radio" name="q19" value="D"> D) Only some Bloops are Lazzies</label>
+      </div>
+      <div class="question">
+        <p>20. A clock shows the time as 3:15. What is the angle between the hour and the minute hand?</p>
+        <label><input type="radio" name="q20" value="A"> A) 7.5 degrees</label><br>
+        <label><input type="radio" name="q20" value="B"> B) 15 degrees</label><br>
+        <label><input type="radio" name="q20" value="C"> C) 30 degrees</label><br>
+        <label><input type="radio" name="q20" value="D"> D) 37.5 degrees</label>
+      </div>
+      <div class="nav-buttons">
+        <button onclick="navigateTo('pg3')">Previous</button>
+        <button onclick="submitQuiz()">Submit</button>
+      </div>
+    </div>
+
+    <div id="result">
+      <h2>Quiz Results</h2>
+      <p id="score"></p>
+      <button onclick="retakeQuiz()">Retake Quiz</button>
+    </div>
+  </div>
+  <script src="link/script.js"></script>
+</body>
+</html>
